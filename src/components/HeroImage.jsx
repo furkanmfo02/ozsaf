@@ -14,7 +14,7 @@ function HeroImage() {
     }, 5000);
 
     return () => clearInterval(interval);
-  }, []);
+  });
 
   function goToPrevious() {
     setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
@@ -26,7 +26,14 @@ function HeroImage() {
 
   return (
     <div className="hero-carousel">
-      <img src={images[currentIndex]} alt={`Hero slide ${currentIndex + 1}`} className="hero-image" />
+      {images.map((image, index) => (
+        <img
+          key={index}
+          src={image}
+          alt={`Hero slide ${index + 1}`}
+          className={`hero-image ${index === currentIndex ? "active" : ""}`}
+        />
+      ))}
 
       <button className="hero-arrow hero-arrow-left" onClick={goToPrevious}>‹</button>
       <button className="hero-arrow hero-arrow-right" onClick={goToNext}>›</button>
