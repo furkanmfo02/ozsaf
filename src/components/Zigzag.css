@@ -1,0 +1,41 @@
+.zigzag {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin: 4rem 0;
+}
+
+.zigzag.reverse {
+  flex-direction: row-reverse;
+}
+
+.zigzag-image {
+  flex: 1;
+}
+
+.zigzag-image img {
+  width: 50%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.zigzag-text {
+  flex: 1;
+}
+
+.zigzag-text h2 {
+  margin-bottom: 1rem;
+}
+
+.zigzag-text p {
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .zigzag,
+  .zigzag.reverse {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
