@@ -12,6 +12,12 @@
   font-size: 1.25rem;
 }
 
+.navbar-logo img {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
 .navbar-links {
   list-style: none;
   display: flex;

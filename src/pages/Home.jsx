@@ -1,8 +1,8 @@
 import HeroImage from "../components/HeroImage";
 import Zigzag from "../components/Zigzag";
-import zigzag1 from "../assets/hero/zigzag/zigzag1.png";
-import zigzag2 from "../assets/hero/zigzag/zigzag2.png";
-import zigzag3 from "../assets/hero/zigzag/zigzag3.png";
+import zigzag1 from "../assets/zigzag/zigzag1.png";
+import zigzag2 from "../assets/zigzag/zigzag2.png";
+import zigzag3 from "../assets/zigzag/zigzag3.png";
 
 function Home() {
   return (
